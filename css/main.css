@@ -1,0 +1,30 @@
+main {
+  height: 100vh;
+  background-color: grey; }
+  main .fruit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; }
+    main .fruit-container div {
+      height: 100px;
+      width: 100px;
+      background: black;
+      border: 2px solid white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+    main .fruit-container .lemon, main .fruit-container .lime {
+      border-radius: 50px 15px 50px 15px;
+      border-width: 2px;
+      transition-duration: 2s;
+      background: yellow; }
+      main .fruit-container .lemon:hover, main .fruit-container .lime:hover {
+        transform: rotate(360deg) scale(3);
+        transition-duration: 2s; }
+        main .fruit-container .lemon:hover:after, main .fruit-container .lime:hover:after {
+          content: 'im a fruit motherfuckkerr'; }
+    main .fruit-container .lime {
+      background: yellowgreen; }

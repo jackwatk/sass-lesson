@@ -1,0 +1,40 @@
+
+@import './helpers/mixins';
+@import './helpers/variables';
+main{
+  height: 100vh;
+  background: {
+    color: $main;
+  }
+  .fruit-container{
+    @include flex-center(column);
+    height: 100%;
+    div{
+      height: 100px;
+      width: 100px;
+      background: black;
+      border: $border;
+      @include flex-center();
+     
+    }
+    .lemon{
+      border: {
+        radius: 50px 15px 50px 15px;
+        width: 2px;
+      }
+      transition-duration: 2s;
+      &:hover{
+        transform: rotate(360deg) scale(3);
+        transition-duration: 2s;
+        &:after{
+          content: 'im a fruit motherfuckkerr'
+        }
+      }
+      background: yellow;
+    } 
+    .lime{
+      @extend .lemon;
+      background: yellowgreen;
+    }
+  }
+}
