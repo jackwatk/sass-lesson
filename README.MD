@@ -62,6 +62,9 @@ $border: 2px solid white;`
   justify-content: space-around;
   align-items: center;
 }`
+` .fruit-container{
+    @include flex-center(column);
+`
 
 # Extending
 
